@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportka - Hlavní stránka</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Sportka - Losování čísel</h1>
+    <nav>
+        <ul>
+            <li><a href="losovani.html">Domů</a></li>
+            <li><a href="pravidla.html">Pravidla</a></li>
+            <li><a href="index.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="losovani">
+        <h2>Zadejte 6 čísel od 1 do 49</h2>
+        <form id="sportkaForm">
+            <input type="number" min="1" max="49" name="cislo1" required>
+            <input type="number" min="1" max="49" name="cislo2" required>
+            <input type="number" min="1" max="49" name="cislo3" required>
+            <input type="number" min="1" max="49" name="cislo4" required>
+            <input type="number" min="1" max="49" name="cislo5" required>
+            <input type="number" min="1" max="49" name="cislo6" required>
+            <button type="submit">Tah</button>
+        </form>
+        <div id="vysledek"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Sportka App</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

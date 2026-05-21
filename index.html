@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Sportka - Kontakt</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Sportka - Kontakt</h1>
+  <nav>
+    <ul>
+      <li><a href="losovani.html">Domů</a></li>
+      <li><a href="pravidla.html">Pravidla</a></li>
+      <li><a href="index.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="kontakt">
+    <h2>Kontaktujte nás</h2>
+    <form id="kontaktForm">
+      <label>Jméno: <input type="text" name="jmeno" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Zpráva: <textarea name="zprava" required></textarea></label><br>
+      <button type="submit">Odeslat</button>
+    </form>
+    <div id="kontaktVysledek"></div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Sportka App</p>
+</footer>
+
+<script>
+  const kontaktForm = document.getElementById('kontaktForm');
+  const kontaktVysledek = document.getElementById('kontaktVysledek');
+
+  kontaktForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    kontaktVysledek.textContent = 'Děkujeme, vaše zpráva byla odeslána!';
+    kontaktForm.reset();
+  });
+</script>
+</body>
+</html>
